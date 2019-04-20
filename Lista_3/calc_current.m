@@ -35,9 +35,11 @@ ddz = dz/ie_steps;
 %zcenter = zcenter(1:length(zcenter)-1); %chop off the last element
 %zdist = zcenter-zcenter(1); % distance from the end segment to every other segment
 %rr = sqrt(wire_radius^2 + zdist.^2);
+
 ZM = length2/2-.5*dz;
 jj=1:ie_steps;
 z = -.5*dz + ddz*jj;
+ZN = 1:current_steps;
 for ii=1:current_steps-1
     % crt = 0;
     ZN(ii) = length2/2 -(ii-.5)*dz;

@@ -16,7 +16,7 @@ close all;
 lambda = 1;
 ant_length = lambda/2;
 wire_radius = lambda*10e-4;
-current_steps = 60;
+current_steps = 6;
 feed_voltage = 1;
 
 %k is the wave number (called beta in some contexts).
@@ -28,6 +28,7 @@ zprime=linspace(-ant_length/2,ant_length/2,current_steps);
 %current holds an approximation of the current along each segment of the antenna.
 %this code uses equation
 current=calc_current(lambda, ant_length, wire_radius, zprime, feed_voltage);
+abs(current)
 %plot the current distribution along the antenna
 figure; plot(abs(current),zprime); title('Current Distribution (Magnitude)');
 xlabel('Current (amps)'); ylabel('Z Location (m)');

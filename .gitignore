@@ -3,4 +3,5 @@
 *.exe
 4nec2/
 *.asv
-*.png
+/*.png
+*.out

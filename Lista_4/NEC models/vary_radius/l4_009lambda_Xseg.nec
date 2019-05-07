@@ -1,7 +1,7 @@
 CM Example 1 :	Dipole in free space 	
 CM See GetStarted.txt
 CE
-GA	1	71	0.5	0	360	0.0005
+GA	1	41	0.09	0	360	0.0005
 GE	0
 GN	-1
 EK
